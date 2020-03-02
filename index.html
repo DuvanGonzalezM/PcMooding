@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCMooding</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body class="container">
+    <header class="text-center">
+        <h1>My PC with Mooding</h1>
+    </header>
+    <section class="row">
+        <div class="col-lg-12 col-md-12 col-sm12 text-center portatil">
+            <legend>Precio: $ <span id="price"></span></legend>
+            <img src="./img/AcerAspire.jpg" alt="My Pc" size="300" width="300">
+        </div>
+        <div class="col-lg-12"></div>
+        <div class="col-lg-12 col-md-12 col-sm-12 text-center row">
+            <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+                <legend>Procesador <br><span id="SpanProcesador">Intel Core I3 2th Gen</span></legend>
+                <img src="./img/ProcesadorAspire.jpg" alt="Procesador" id="Procesador" size="300" width="150" height="150">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+                <legend>Tarjeta Ram <br><span id="SpanTarjeta_Ram">Ddr3 4gb 1333Mhz</span></legend>
+                <img src="./img/RamAspire.jpg" alt="Tarjeta_Ram" id="Tarjeta_Ram" size="300" width="150" height="150">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+                <legend>Tarjeta Video <br><span id="SpanTarjeta_Video">Intel HD Graphics 3000</span></legend>
+                <img src="./img/VideoAspire.jpg" alt="Tarjeta_Video" id="Tarjeta_Video" size="300" width="150" height="150">
+            </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 text-center row">
+            <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+                <p class="btn btn-success" onclick="CambiarProcesador(event)" id="BtnProcesador">+</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+                <p class="btn btn-success" onclick="CambiarTarjRam(event)" id="BtnTarjRam">+</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+                <p class="btn btn-success" onclick="CambiarTarjVideo(event)" id="BtnTarjVideo">+</p>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center">
+        <p>
+            Creado por <a href="https://github.com/LoquilloDuvan" target="_blank" rel="noopener noreferrer">Duvan Gonzalez</a> © 2020
+        </p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

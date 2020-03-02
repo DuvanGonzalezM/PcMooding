@@ -1,0 +1,21 @@
+.portatil{
+    margin-bottom: 30px;
+}
+header{
+    margin-bottom: 50px;
+    padding: 15px;
+    color: white;
+    background-color: gray;
+}
+
+footer{
+    margin-top: 50px;
+    padding: 10px;
+    position: relative;
+    color: white;
+    background-color: gray;
+}
+
+.btn{
+    margin-top: 5px !important;
+}
